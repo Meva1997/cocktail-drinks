@@ -3,13 +3,13 @@ import { openrouter } from '../lib/ai'
 
 export default {
   async generateRecipe(prompt: string){
-    const result = await streamText({
+    const result = streamText({
       model: openrouter('meta-llama/llama-3.3-8b-instruct:free'),
       prompt,
       system: 'Eres un bartender con experienca',
       temperature: 0.5
     })
-
+    console.log(result)
     return result.textStream
   }
 } 
