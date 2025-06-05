@@ -9,7 +9,7 @@ export default {
       system: 'Eres un bartender con experienca',
       temperature: 0.5
     })
-    console.log(result)
+ 
     return result.textStream
   }
 } 
