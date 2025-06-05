@@ -22,7 +22,7 @@ export default function FavoritesPage() {
         ))}
       </div>
     ) : (
-      <p className="my-10 text-2xl text-center text-orange-600 animate-bounce">Your favorites will apear here...</p>
+      <p className="my-10 text-2xl text-center text-orange-600 animate-bounce">Your favorites will appear here...</p>
     )}
     </>
   )
