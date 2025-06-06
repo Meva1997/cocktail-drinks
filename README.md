@@ -1,54 +1,71 @@
-# React + TypeScript + Vite
+# 🍹 Cocktail Drinks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web app that demonstrates API consumption, state management, AI integration, and a clean UI. Built with **React**, **TypeScript**, **Tailwind CSS**, and powered by **Zustand** and **OpenRouter** AI. Deployed with Netlify.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **API Integration:** Fetch and display cocktail data with search and filter options.
+- **Favorites:** Mark cocktails as favorites for quick access.
+- **AI-Powered:** Uses OpenRouter for enhanced search or recommendation capabilities.
+- **Modern State Management:** Powered by Zustand for scalable, simple state logic.
+- **Responsive Design:** Styled with Tailwind CSS for a seamless experience across devices.
+- **Type Safety:** Built with TypeScript for robust and maintainable code.
+- **Live Demo:** [View on Netlify](https://cocktail-drinks-alex.netlify.app/)
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **Zustand**
+- **OpenRouter (AI)**
+- **npm**
+- **Netlify (Deployment)**
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📦 Installation
+
+```bash
+git clone https://github.com/Meva1997/cocktail-drinks.git
+cd cocktail-drinks
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> Make sure you have Node.js and npm installed.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧑‍💻 Usage
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- Browse cocktails fetched from the API.
+- Click the favorites button to add a cocktail to your favorites.
+- Try the AI-powered features (e.g., smart search or recommendations via OpenRouter).
+
+### Example: Adding a Favorite
+
+1. Browse or search for a cocktail.
+2. Click the favorites button to favorite it.
+3. Access your favorites from the favorites section.
+
+### Example: Using AI Search
+
+1. Enter a query in the AI search bar (e.g., "Show me summer drinks").
+2. Get recommendations powered by OpenRouter.
+
+## 🗂️ Project Structure
+
 ```
+src/
+├── components/      # React components
+├── store/           # Zustand state management
+├── api/             # API logic
+├── hooks/           # Custom hooks
+├── styles/          # Tailwind and global styles
+...
+```
+
+## ✨ Why This Project?
+
+This project is designed to showcase my abilities in modern front-end development, state management, and AI integration. Perfect for demonstrating full-stack interaction and a polished user experience.
+
+## 📄 License
+
+This project is licensed under the MIT License.
